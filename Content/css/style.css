@@ -71,7 +71,7 @@
 /*#region banner */
 .banner { background-color: #D6EFF3; }
 .banner-bg .box-text { transform: translateY(-30px); }
-.banner-bg .box-text-content { display: flex; justify-content: space-between; }
+.banner-bg .box-text-content { display: flex; justify-content: space-between; flex-wrap: wrap; }
 .banner-bg .box-text-content .list-text { display: flex; }
 .banner-bg .box-text-content .list-text-item { font-size: 1.4rem; font-weight: bold; }
 .banner-bg .box-text-content .list-text-item:first-child { color: #ff00ce; padding-right: 5px; }
@@ -84,6 +84,10 @@
 .banner-bg .box-text-content .list-social-item:nth-child(3) { background-color: #51cb5a; }
 .banner-bg .box-text-content .list-social-item:nth-child(4) { background-color: #cb2320; }
 .banner-bg .box-text-content .list-social-item:nth-child(5) { background-color: #dd4e31; }
+@media (max-width: 510px) { .banner-bg .box-text .box-text-content { justify-content: center; }
+  .banner-bg .box-text .box-text-content .list-text { padding: 10px 0; }
+  .banner-bg .box-text .box-text-content .list-social { padding: 10px 0; }
+  .banner-bg .box-text .box-text-content .list-social-item i { color: #ffffff; } }
 .banner-bg .box-active { padding: 40px 0; }
 .banner-bg .box-active .content { overflow: hidden; }
 .banner-bg .box-active .content-item { transition: all 1s; border-radius: 15px; overflow: hidden; }
@@ -100,6 +104,7 @@
 .banner-bg .box-active .content:hover .content-item.i3 { background-color: #8ccc3d; }
 .banner-bg .box-active .content:hover .content-item.i4 { background-color: #e83643; }
 @media (max-width: 892.98px) { .banner-bg .box-active .content { margin-bottom: 15px; } }
+@media (max-width: 575.98px) { .banner-bg .box-active { padding: 20px 0; } }
 
 /*#endregion */
 /*#region about */
