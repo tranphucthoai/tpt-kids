@@ -372,6 +372,7 @@
 
         .input-group {
             display: flex;
+            justify-items: center;
             padding-bottom: 200px;
             border: none;
 
@@ -405,6 +406,12 @@
     @media (max-width: 767.98px) {
         .box-search {
             width: 80%;
+
+            .input-group {
+                input {
+                    width: 100px;
+                }
+            }
         }
     }
 }
@@ -414,7 +421,6 @@
 }
 /*#endregion */
 /*#endregion */
-
 /*#region main */
 .main {
 }
@@ -677,6 +683,7 @@
 /*#region about */
 .about {
     overflow-x: hidden;
+
     &-bg {
         background-color: $bgGreenAbout;
 
@@ -816,7 +823,6 @@
     }
 }
 /*#endregion */
-
 /*#region library-img */
 .library {
     &-bg {
@@ -941,7 +947,6 @@
     }
 }
 /*#endregion */
-
 /*#region news */
 .news {
     &-bg {
@@ -1077,7 +1082,6 @@
     }
 }
 /*#endregion */
-
 /*#region contact */
 .contact {
     &-bg {
@@ -1164,7 +1168,6 @@
 }
 /*#endregion */
 /*#endregion */
-
 /*#region footer */
 .footer {
     &-top {
