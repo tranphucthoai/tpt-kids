@@ -53,22 +53,23 @@
                     display: flex;
                     align-items: center;
 
-                    i {
-                        font-size: 1rem;
-                        font-weight: bold;
-                        color: $greyTextMain;
-                    }
-
-                    span {
-                        font-size: 1rem;
-                        font-weight: bold;
-                        color: $whiteMain;
-                        padding: 0 5px;
-                    }
-
                     p {
                         color: $whiteMain;
                         font-size: 0.9rem;
+                        text-align: justify;
+
+                        i {
+                            font-size: 1rem;
+                            font-weight: bold;
+                            color: $greyTextMain;
+                        }
+
+                        span {
+                            font-size: 1rem;
+                            font-weight: bold;
+                            color: $whiteMain;
+                            padding: 0 5px;
+                        }
                     }
                 }
             }
@@ -76,6 +77,7 @@
             @media (max-width: 767.98px) {
                 .header-top-content {
                     justify-content: center;
+                    flex-wrap: wrap;
                 }
             }
         }
@@ -421,6 +423,7 @@
 }
 /*#endregion */
 /*#endregion */
+
 /*#region main */
 .main {
 }
@@ -680,6 +683,7 @@
     }
 }
 /*#endregion */
+
 /*#region about */
 .about {
     overflow-x: hidden;
@@ -744,6 +748,7 @@
     }
 }
 /*#endregion */
+
 /*#region teacher */
 .teacher {
     &-bg {
@@ -823,6 +828,7 @@
     }
 }
 /*#endregion */
+
 /*#region library-img */
 .library {
     &-bg {
@@ -947,6 +953,7 @@
     }
 }
 /*#endregion */
+
 /*#region news */
 .news {
     &-bg {
@@ -1082,6 +1089,7 @@
     }
 }
 /*#endregion */
+
 /*#region contact */
 .contact {
     &-bg {
@@ -1167,7 +1175,9 @@
     }
 }
 /*#endregion */
+
 /*#endregion */
+
 /*#region footer */
 .footer {
     &-top {
